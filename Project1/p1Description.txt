@@ -32,6 +32,6 @@ command returns the largest value in the column.
 The command "avg" is followed by the name of a column containing int or double values.  The
 command returns the average value of the column.
 -------------------------------------------------------------------------------------------
-EDGE CASES:
+NOTES:
 The program will fail if min/max/avg is called with a non int/double column.
 The csv file has a column "Empty" with no value in it to check for spacing correctness.
