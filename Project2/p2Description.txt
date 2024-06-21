@@ -23,3 +23,7 @@ run if an integer text file is used with the 's' input on account of array datat
 The max content in any given text file is 20,000 however during implementation when individual
 arrays for each file are merged together, the size of the array is trimmed to fit exactly to the
 amount of content variables, disregarding any duplicates in a single text file.
+-----------------------------------------------------------------------------------------------------
+All code is my own unless otherwise mentioned, test cases were provided by the professor to ensure 
+similar output among all students.
+Grade: 100/100
