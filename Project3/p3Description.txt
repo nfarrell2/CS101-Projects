@@ -1,8 +1,8 @@
 This project is run in the terminal through 
     ./a.exe < cmd.txt
 where a.exe is the executable, and cmd.txt is a text file containing the test commands for the project.
-This project declares the classes used in a heading file, p3.h, and the class functions are declared
-separately in their own source file, p3.cpp.  Because of this, both main.cpp and p3.cpp have to be
+This project declares the classes used in a provided heading file, p3.h, and the class functions are 
+declared separately in their own source file, p3.cpp.  Because of this, both main.cpp and p3.cpp have to be
 compiled together when compiling the project.  The terminal command used to compile on the local machine is:
     g++ main.cpp p3.cpp
 --------------------------------------------------------------------------------------------------------------
@@ -22,5 +22,9 @@ constructors, and deep-copy copy assignment operators
 NOTES:
 The program will not perform as intended if both AddContact and AddContactOrdered are used in the same run.
 This follows for AddInfo and AddInfoOrdered.
-Although the cmd.txt file allowed for ease of testing when building the project, the main.cpp file is set up
-so that a user can interact with the program directly if desired.
+Although the cmd.txt file allowed for ease of testing when building the project, the main.cpp file was set up
+and provided to students so that a user can interact with the program directly if desired.
+--------------------------------------------------------------------------------------------------------------
+All code is my own unless otherwise mentioned, test cases were provided by the professor to ensure similar 
+output among all students.
+Grade: 100/100
