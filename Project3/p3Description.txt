@@ -1,1 +1,26 @@
------------------------------------------------------------------------------------------------------
+This project is run in the terminal through 
+    ./a.exe < cmd.txt
+where a.exe is the executable, and cmd.txt is a text file containing the test commands for the project.
+This project declares the classes used in a heading file, p3.h, and the class functions are declared
+separately in their own source file, p3.cpp.  Because of this, both main.cpp and p3.cpp have to be
+compiled together when compiling the project.  The terminal command used to compile on the local machine is:
+    g++ main.cpp p3.cpp
+--------------------------------------------------------------------------------------------------------------
+PROJECT DESCRIPTION:
+This project takes user input directly from the terminal command line.  For ease of testing, a txt file with
+the input commands were written to cmd.txt and are sent directly to the program when run in the terminal.  The
+project takes first and last names as input for a new Contact object on a ContactList linked list object and
+then has the option to add unique Info objects to a linked list under individual Contacts.
+
+The project allows the user to either add Contact and Info objects sequentially to their respective lists or
+for the user to add them in alphabetical order through the "AddContactOrdered" and "AddInfoOrdered" methods.
+Additionally, the user can remove Contact and Info objects from the list and has the option to print the list.
+
+This project utilizes classes, header files, linked lists, constructors, destructors, deep-copy copy 
+constructors, and deep-copy copy assignment operators
+--------------------------------------------------------------------------------------------------------------
+NOTES:
+The program will not perform as intended if both AddContact and AddContactOrdered are used in the same run.
+This follows for AddInfo and AddInfoOrdered.
+Although the cmd.txt file allowed for ease of testing when building the project, the main.cpp file is set up
+so that a user can interact with the program directly if desired.
