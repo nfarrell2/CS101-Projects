@@ -1,1 +1,31 @@
+This project is run in the terminal through 
+    ./a.exe inorder.txt levelorder.txt encoded.txt
+where a.exe is the executable, inorder.txt is a text file of the in order traversal of a Huffman Tree,
+levelorder.txt is the level order traversal of the same Huffman Tree, and encoded.txt is a message that
+is coded using the Huffman tree represented by both traversals.
+-----------------------------------------------------------------------------------------------------------------
+PROJECT DESCRIPTION:
+This project takes the two traversals, each of numbers that represent either parent nodes of a Huffman Tree or
+leaf nodes that correspond to an ASCII value.  Because of the ASCII representation, any number that is greater
+than or equal to 128 is considered a parent node and such has no ASCII value.
 
+This key fact provided an opportunity to use only the level order traversal of the Huffman Tree.  I was able to
+use a queue data structure of the parent nodes of the tree to build out a tree starting with the first node in
+the list. Index 0 of a level order traversal is always the root. Index 1 and 2 are the left and right children,
+respectively. Recursing through the queue and removing parents who have both children and you are left with only
+leaf nodes and the Huffman Tree.
+
+After building the tree, it was easy to read in the encoded message and decode each binary number by traveling down
+the Huffman Tree, left for 0 and right for 1.  The decode function was of type void and printed directly to the
+console what the ASCII value at the leaf node was.  This allows the message to be decoded as the program moved on
+to the next binary number in the encoded.txt file.
+
+This project utilized classes, pointers, binary trees, traversals, Huffman coding, and cryptography.
+-----------------------------------------------------------------------------------------------------------------
+NOTES:
+This program does not encode messages, but however decodes them.  Although it wasn't graded for this class, some
+research was done and tested to build and encode a Huffman code.
+-----------------------------------------------------------------------------------------------------------------
+All code is my own unless otherwise mentioned, test cases were provided by the professor to ensure similar output
+among all students.
+Grade: 100/100
