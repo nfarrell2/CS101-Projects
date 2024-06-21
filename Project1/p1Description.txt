@@ -35,3 +35,7 @@ command returns the average value of the column.
 NOTES:
 The program will fail if min/max/avg is called with a non int/double column.
 The csv file has a column "Empty" with no value in it to check for spacing correctness.
+-------------------------------------------------------------------------------------------
+All code is my own unless otherwise mentioned, test cases were provided by the professor to
+ensure similar output among all students.
+Grade: 100/100
