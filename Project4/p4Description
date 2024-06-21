@@ -1,1 +1,41 @@
+This project is run in the terminal through 
+    ./a.exe sample.txt q.txt #table_size "method" #dh
+where a.exe is the executable, sample.txt is a text file containing the text that is to be hashed into the
+hash table, q.txt is the query file of words to search for in the hash table, #table_size is the size of the
+hash table, "method" is the probing method (lp - linear probing, qp - quadratic probing, dh - double hashing)
+and #dh is the number to double hash by which is included only when the method is the string "dh".
+-----------------------------------------------------------------------------------------------------------------
+PROJECT DESCRIPTION:
+This project takes the command line arguments and creates a Hash Table data structure of the size specified in
+the terminal command line when the executable is run.  The initial hash function is the simple djb2 hash
+function created by Daniel J. Bernstein in the early 1990s.  The program then hashes each individual word in the
+sample.txt file and stores them accordingly in the table.
 
+Collisions are handled depending on what method was specified in the command line.  For double hashing, an
+additional command line argument is necessary and is the amount for the collisions to be hashed by, after djb2.
+Once the hash table insert function reaches an empty bucket, which is of type list<string>, the first index is
+filled with the word.  Each index after the first is appended with the line number that the word is found on.
+This may seem unnecessary but in the context of the project, it makes sense.
+
+Once every word is properly hashed, the program outputs the total number of words in the file.  Next it outputs
+how many UNIQUE words were in the file, not including repetitive words.  The next output is the number of 
+collisions that were needed to insert every word.  After this general info is output, the q.txt query file is
+read and a subset of words is tested against the hash table.
+
+For each word in the query file, the program finds what lines of the original file a specific word occurs on in
+the sample.txt file (this is where the list was necessary and line numbers were used).  The program then prints
+how many collisions were required to find the word in the hash table.  Upon the last word searched for in the
+query file, the program terminates and ends automatically.
+
+This project utilizes classes, hash tables, hashing functions, collision counting/strategies, and rigorous file
+input/analysis.
+-----------------------------------------------------------------------------------------------------------------
+NOTES:
+The program will not run if a double hash amount is not input as a sixth command line argument and the hashing
+method is set to "dh"
+Vectors were chosen to represent the hash table in my specific project, however arrays were allowed as an 
+alternative.
+-----------------------------------------------------------------------------------------------------------------
+All code is my own unless otherwise mentioned, test cases were provided by the professor to ensure similar output
+among all students.
+Grade: 100/100
