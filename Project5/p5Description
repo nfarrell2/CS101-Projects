@@ -24,7 +24,7 @@ This project utilized classes, pointers, binary trees, traversals, Huffman codin
 -----------------------------------------------------------------------------------------------------------------
 NOTES:
 This program does not encode messages, but however decodes them.  Although it wasn't graded for this class, some
-research was done and tested to build and encode a Huffman code.
+research was done and a Huffman compression algorithm was built.
 -----------------------------------------------------------------------------------------------------------------
 All code is my own unless otherwise mentioned, test cases were provided by the professor to ensure similar output
 among all students.
