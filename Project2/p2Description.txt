@@ -16,6 +16,9 @@ online textbook, zyBooks, and used for grading purposes.
 Alternatively, if the command line character input indicates 's' for string, the sorting algorithm
 used was to be a Quicksort variation.  The specific Quicksort was also to be copied and pasted
 directly from the same textbook.
+
+This project utilized logical thinking to make effective code and required an understanding of 
+different sorting algorithms so that intended output was achieved.
 -----------------------------------------------------------------------------------------------------
 NOTES:
 The program will fail if a string value text file is used with the 'i' input but the program will
